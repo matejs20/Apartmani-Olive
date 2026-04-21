@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apartmani Olive - moderan jednosoban apartman u Bibinjama, 37m2, za 2+1 osobu, parking, WiFi, klima. Idealno za odmor uz more.">
+    <meta name="author" content="Matej Sorić">
+    <meta property="og:title" content="Apartmani Olive - Udoban apartman u Bibinjama">
+    <meta property="og:description" content="Apartman na 2. katu s terasom, potpuno opremljen, dvorište s ležaljkama i izlaz na plažu.">
+    <meta property="og:image" content="img/soba.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Apartmani Olive - Naslovnica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">Apartmani Olive</div>
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Naslovnica</a></li>
+                <li><a href="about.html">O apartmanu</a></li>
+                <li><a href="gallery.html">Galerija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Apartmani Olive</h1>
+            <p>Udoban apartman u Bibinjama – idealan za vaš odmor uz more.</p>
+            <a href="kontakt.html" class="btn">Rezervirajte smještaj →</a>
+        </div>
+    </section>
+
+    <!-- NOVO: Doček gostiju -->
+    <section class="welcome container">
+        <h2>Dobrodošli u Apartmane Olive</h2>
+        <div class="welcome-grid">
+            <div class="welcome-text">
+                <p>Smješteni u <strong>Bibinjama</strong>, samo <strong>50 metara od mora</strong>, naši gosti uživaju u mirnom okruženju, idealnom za obiteljski odmor ili bijeg od gradske vreve.</p>
+                <p>Apartman se nalazi na <strong>2. katu</strong> obiteljske kuće, s privatnim ulazom i <strong>besplatnim parkingom</strong> ispred kuće. U sklopu smještaja gostima je dostupno <strong>dvorište s ležaljkama, stolom za stolni tenis i ljuljačkama za djecu</strong>, uz <strong>izravan izlaz na plažu</strong>.</p>
+                <p>Bibinje su poznate po dugoj šetnici uz more, brojnim restoranima s ribljim specijalitetima te blizini <strong>Nacionalnog parka Kornati, NP Paklenica i grada Zadra</strong> (sve unutar 20 minuta vožnje).</p>
+            </div>
+            <div class="welcome-img">
+                <img src="img/dvoriste.jpg" alt="Dvorište Apartmana Olive">
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVO: Izdvojeno iz ponude (s tvoje 4 nove slike) -->
+    <section class="offer-highlight container">
+        <h2>Što vas očekuje u dvorištu i na plaži?</h2>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <img src="img/tenis.jpg" alt="Stol za stolni tenis">
+                <h3>🏓 Stolni tenis</h3>
+                <p>Zabava za sve generacije – stol za stolni tenis u dvorištu.</p>
+            </div>
+            <div class="offer-card">
+                <img src="img/ljuljacke.jpg" alt="Ljuljačke za djecu">
+                <h3>👶 Ljuljačke za djecu</h3>
+                <p>Najmlađi gosti imaju svoj kutak za igru.</p>
+            </div>
+            <div class="offer-card">
+                <img src="img/izlaz-na-plazu.jpg" alt="Izlaz na plažu">
+                <h3>🚪 Izravan izlaz na plažu</h3>
+                <p>Iz dvorišta na more – doslovno 20 metara hoda.</p>
+            </div>
+            <div class="offer-card">
+                <img src="img/lezaljke-plaza.jpg" alt="Ležaljke na plaži">
+                <h3>🏖️ Ležaljke na plaži</h3>
+                <p>Besplatne ležaljke za sve naše goste.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container">
+        <h2>Zašto odabrati nas?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🌊 Blizina mora</h3>
+                <p>Dvorište s izlazom na plažu, ležaljke i stol za stolni tenis.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🏠 Potpuna oprema</h3>
+                <p>Klima, WiFi, TV, hladnjak, kuhalo, posuđe – sve što vam treba.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚗 Besplatan parking</h3>
+                <p>Parkirno mjesto ispred kuće za vaš automobil.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📍 Izvrsna lokacija</h3>
+                <p>U blizini Zračne luke Zadar, autoputa i svih sadržaja.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Matej Sorić, Sveučilište u Zadru – Studij informacijske tehnologije</p>
+        <p>Kontakt: <a href="mailto:matejsoric2009@gmail.com">matejsoric2009@gmail.com</a></p>
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
+</body>
+</html>

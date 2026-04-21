@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerija slika Apartmana Olive – soba, kuhinja, terasa, kupaonica, dvorište i plaža.">
+    <meta name="author" content="Matej Sorić">
+    <meta property="og:title" content="Galerija – Apartmani Olive">
+    <meta property="og:image" content="img/soba.jpg">
+    <title>Galerija – Apartmani Olive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">Apartmani Olive</div>
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Naslovnica</a></li>
+                <li><a href="about.html">O apartmanu</a></li>
+                <li><a href="gallery.html" class="active">Galerija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Galerija Apartmana Olive</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="img/soba.jpg" alt="Spavaća soba s krevetom i terasom"></div>
+            <div class="gallery-item"><img src="img/kuhinja.jpg" alt="Kuhinja i blagovaonica"></div>
+            <div class="gallery-item"><img src="img/terasa.jpg" alt="Terasa s pogledom"></div>
+            <div class="gallery-item"><img src="img/kupaonica.jpg" alt="Kupaonica s tušem"></div>
+            <div class="gallery-item"><img src="img/dvoriste.jpg" alt="Dvorište s ležaljkama i stolom za stolni tenis"></div>
+            <div class="gallery-item"><img src="img/plaza.jpg" alt="Plaža ispred apartmana"></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Matej Sorić, Sveučilište u Zadru – Studij informacijske tehnologije</p>
+        <p>Kontakt: <a href="mailto:matejsoric2009@gmail.com">matejsoric2009@gmail.com</a></p>
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
+</body>
+</html>
