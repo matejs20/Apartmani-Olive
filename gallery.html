@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galerija Apartmana Olive – pogledajte sobe, terasu, dvorište i plažu. Bibinje, Hrvatska.">
+  <meta name="author" content="Matej Sorić">
+  <meta property="og:title" content="Galerija – Apartmani Olive">
+  <meta property="og:description" content="Fotografije apartmana, terase, dvorišta i plaže u Bibinjama kraj Zadra.">
+  <meta property="og:image" content="img/nasl9.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apartmani-olive.netlify.app/gallery">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Galerija – Apartmani Olive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Preskoči na sadržaj</a>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">Apartmani <span>Olive</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Otvori izbornik" aria-expanded="false">☰</button>
+      <nav id="nav-menu" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Naslovnica</a></li>
+          <li><a href="about.html">O apartmanu</a></li>
+          <li><a href="gallery.html" class="active" aria-current="page">Galerija</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label" style="color: var(--color-accent);">Fotografije</span>
+        <h1>Galerija</h1>
+        <p>Pogledajte apartman, dvorište i okolicu prije dolaska</p>
+      </div>
+    </section>
+
+    <!-- GALERIJA -->
+    <section class="gallery-section">
+      <div class="container">
+
+        <!-- Apartman -->
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Unutrašnjost</span>
+          <h2 class="section-title">Apartman</h2>
+        </div>
+        <div class="gallery-grid" style="margin-bottom: 3rem;">
+          <div class="gallery-item wide">
+            <img src="img/soba.jpg" alt="Spavaća soba s dvokrevetnim ležajem i izlazom na terasu">
+            <div class="gallery-item-overlay"><span>Spavaća soba</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/kuhinja.jpg" alt="Kuhinja i blagovaonica apartmana">
+            <div class="gallery-item-overlay"><span>Kuhinja</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/kupaonica.jpg" alt="Kupaonica s tušem">
+            <div class="gallery-item-overlay"><span>Kupaonica</span></div>
+          </div>
+          <div class="gallery-item wide">
+            <img src="img/terasa.jpg" alt="Terasa apartmana s pogledom">
+            <div class="gallery-item-overlay"><span>Terasa</span></div>
+          </div>
+        </div>
+
+        <!-- Dvorište i plaža -->
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Vanjski prostori</span>
+          <h2 class="section-title">Dvorište i plaža</h2>
+        </div>
+        <div class="gallery-grid" style="margin-bottom: 3rem;">
+          <div class="gallery-item tall">
+            <img src="img/dvoriste.jpg" alt="Dvorište s ležaljkama i stolom za stolni tenis">
+            <div class="gallery-item-overlay"><span>Dvorište</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/tenis.jpg" alt="Stol za stolni tenis u dvorištu">
+            <div class="gallery-item-overlay"><span>Stolni tenis</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/ljuljacke.jpg" alt="Ljuljačke za djecu u dvorištu">
+            <div class="gallery-item-overlay"><span>Ljuljačke</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/izlaz-na-plazu.jpg" alt="Izlaz na plažu iz dvorišta">
+            <div class="gallery-item-overlay"><span>Izlaz na plažu</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/obj14.jpg" alt="Ležaljke uz more u Bibinjama">
+            <div class="gallery-item-overlay"><span>Plaža</span></div>
+          </div>
+        </div>
+
+        <!-- Okolica -->
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Lokacija</span>
+          <h2 class="section-title">Bibinje i okolica</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item wide">
+            <img src="img/nasl9.jpg" alt="Pogled iz zraka na Bibinje i marinu">
+            <div class="gallery-item-overlay"><span>Bibinje – pogled iz zraka</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/nasl5.jpg" alt="Zadar – pogled iz zraka na poluotok">
+            <div class="gallery-item-overlay"><span>Zadar</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/plaza.jpg" alt="Plaža ispred apartmana">
+            <div class="gallery-item-overlay"><span>Plaža</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Sviđa vam se ono što vidite?</h2>
+        <p>Rezervirajte odmor u Apartmanima Olive – slobodni termini se brzo popunjavaju.</p>
+        <a href="kontakt.html" class="btn btn-primary">Rezervirajte smještaj</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Apartmani <span>Olive</span></div>
+        <p>&copy; 2026 Matej Sorić &nbsp;|&nbsp; Sveučilište u Zadru – SIT</p>
+        <p>Kontakt: <a href="mailto:matejsoric2009@gmail.com">matejsoric2009@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('show');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

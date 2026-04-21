@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontaktirajte Apartmane Olive za upit ili rezervaciju. Bibinje, Hrvatska – 50m od mora.">
+  <meta name="author" content="Matej Sorić">
+  <meta property="og:title" content="Kontakt – Apartmani Olive">
+  <meta property="og:description" content="Pošaljite upit ili rezervirajte apartman u Bibinjama. Odgovaramo brzo!">
+  <meta property="og:image" content="img/nasl9.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apartmani-olive.netlify.app/kontakt">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Kontakt – Apartmani Olive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Preskoči na sadržaj</a>
+
+  <header>
+    <div class="container header-container">
+      <div class="logo">Apartmani <span>Olive</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Otvori izbornik" aria-expanded="false">☰</button>
+      <nav id="nav-menu" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Naslovnica</a></li>
+          <li><a href="about.html">O apartmanu</a></li>
+          <li><a href="gallery.html">Galerija</a></li>
+          <li><a href="kontakt.html" class="active" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label" style="color: var(--color-accent);">Kontakt i rezervacije</span>
+        <h1>Kontaktirajte nas</h1>
+        <p>Slobodne termine i cijene provjerite slanjem upita – odgovaramo brzo!</p>
+      </div>
+    </section>
+
+    <section class="kontakt-section">
+      <div class="container">
+        <div class="kontakt-grid">
+
+          <!-- INFO KARTICE -->
+          <div class="kontakt-info">
+            <span class="section-label">Pronađite nas</span>
+            <h2 class="section-title">Informacije o smještaju</h2>
+
+            <div class="info-card">
+              <span class="info-card-icon" aria-hidden="true">📍</span>
+              <div class="info-card-body">
+                <h3>Adresa</h3>
+                <p>Bibinje, Zadarska županija<br>Hrvatska</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <span class="info-card-icon" aria-hidden="true">📞</span>
+              <div class="info-card-body">
+                <h3>Telefon</h3>
+                <p><a href="tel:+385981234567">+385 98 123 4567</a></p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <span class="info-card-icon" aria-hidden="true">✉️</span>
+              <div class="info-card-body">
+                <h3>Email</h3>
+                <p><a href="mailto:matejsoric2009@gmail.com">matejsoric2009@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <span class="info-card-icon" aria-hidden="true">🕐</span>
+              <div class="info-card-body">
+                <h3>Check-in / Check-out</h3>
+                <p>Dolazak: od 14:00 h<br>Odlazak: do 10:00 h</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <span class="info-card-icon" aria-hidden="true">🌊</span>
+              <div class="info-card-body">
+                <h3>Do mora</h3>
+                <p>50 metara – izravni izlaz iz dvorišta na plažu</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORMA -->
+          <div class="forma-card">
+            <h2>Pošaljite upit</h2>
+
+            <form action="#" method="post" novalidate>
+
+              <!-- Osobni podaci -->
+              <fieldset>
+                <legend>Osobni podaci</legend>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="ime">Ime *</label>
+                    <input
+                      type="text"
+                      id="ime"
+                      name="ime"
+                      required
+                      autocomplete="given-name"
+                      placeholder="npr. Ana">
+                  </div>
+                  <div class="form-group">
+                    <label for="prezime">Prezime *</label>
+                    <input
+                      type="text"
+                      id="prezime"
+                      name="prezime"
+                      required
+                      autocomplete="family-name"
+                      placeholder="npr. Horvat">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      autocomplete="email"
+                      placeholder="vasa@email.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="telefon">Telefon</label>
+                    <input
+                      type="tel"
+                      id="telefon"
+                      name="telefon"
+                      autocomplete="tel"
+                      placeholder="+385 XX XXX XXXX">
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Rezervacija -->
+              <fieldset>
+                <legend>Podaci o rezervaciji</legend>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="datum-dolaska">Datum dolaska *</label>
+                    <input
+                      type="date"
+                      id="datum-dolaska"
+                      name="datum-dolaska"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <label for="datum-odlaska">Datum odlaska *</label>
+                    <input
+                      type="date"
+                      id="datum-odlaska"
+                      name="datum-odlaska"
+                      required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="osobe">Broj osoba *</label>
+                  <select id="osobe" name="osobe" required>
+                    <option value="">Odaberite broj osoba</option>
+                    <option value="1">1 osoba</option>
+                    <option value="2">2 osobe</option>
+                    <option value="3">3 osobe (2+1)</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <!-- Poruka -->
+              <fieldset>
+                <legend>Poruka</legend>
+                <div class="form-group">
+                  <label for="poruka">Vaša poruka *</label>
+                  <textarea
+                    id="poruka"
+                    name="poruka"
+                    rows="5"
+                    required
+                    placeholder="Napišite eventualna pitanja ili posebne zahtjeve..."></textarea>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem; padding:1rem;">
+                Pošalji upit →
+              </button>
+
+            </form>
+
+            <p class="form-napomena">* Obavezna polja. Forma ne šalje podatke na server – HTML validacija je aktivna.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Apartmani <span>Olive</span></div>
+        <p>&copy; 2026 Matej Sorić &nbsp;|&nbsp; Sveučilište u Zadru – SIT</p>
+        <p>Kontakt: <a href="mailto:matejsoric2009@gmail.com">matejsoric2009@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('show');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Datum odlaska ne može biti prije dolaska
+    const dolazak = document.getElementById('datum-dolaska');
+    const odlazak = document.getElementById('datum-odlaska');
+    dolazak.addEventListener('change', () => {
+      odlazak.min = dolazak.value;
+      if (odlazak.value && odlazak.value < dolazak.value) {
+        odlazak.value = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
